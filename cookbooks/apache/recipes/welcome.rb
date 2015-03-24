@@ -3,5 +3,5 @@ file "/var/www/html/index.html" do
         group "root"
         mode 00544
         action :create
-        content "Welcome to Apache Aslam!!!"
+        content "Welcome to Apache Aslam......!!!"
 end
