@@ -6,10 +6,10 @@ sudo aptitude safe-upgrade
 
 ## 2. install chef
 
-chef_bin=/usr/bin/chef-solo
+chef_bin="/usr/bin/chef-solo"
 
-if ! test -f "$chef_bin"; then
-   sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash &&
+if [ ! -f "$chef_bin" ] ;then
+   sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
 fi
 
 ## 3. Execute server configurations recipes
