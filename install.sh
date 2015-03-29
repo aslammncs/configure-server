@@ -13,5 +13,4 @@ if [ ! -f "$chef_bin" ] ;then
 fi
 
 ## 3. Execute server configurations recipes
-cd /tmp/configure-server
 sudo "$chef_bin" -c solo.rb -j node.json
