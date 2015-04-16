@@ -20,13 +20,13 @@ fi
 echo "Installing python ... if not installed -"
 echo ""
 if [ ! -f "$python_bin" ] ;then
-   sudo apt-get install python2.7
+   sudo apt-get install -y python2.7
 fi
 
 echo "Installing pip ... if not installed -"
 echo ""
 if [ ! -f "$pip_bin" ] ;then
-   sudo apt-get install python-pip
+   sudo apt-get install -y python-pip
 fi
 
 echo "Installing awscli ... if not installed -"
