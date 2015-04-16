@@ -17,7 +17,7 @@ if [ ! -f "$chef_bin" ] ;then
    sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash
 fi
 
-echo "Installing python ... if not installed -"
+echo "Installing python2.7 ... if not installed -"
 echo ""
 if [ ! -f "$python_bin" ] ;then
    sudo apt-get install -y python2.7
